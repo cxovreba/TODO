@@ -1,0 +1,12 @@
+:root {
+    --purple: linear-gradient(135deg, #3710BD 0%, #A42395 100%);
+    --pink: linear-gradient(225deg, #5596FF 0%, #AC2DEB 100%);
+    --white: #fff;
+    --light-white: #FAFAFA;
+    --grey: #9495A5;
+    --black: #25273D;
+    --dark: #171823;
+    --blue: #3A7CFD;
+    --dark-grey: #494C6B;
+    --light-grey: #E3E4F1;
+}

@@ -1,0 +1,72 @@
+/*Responsive*/
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+        margin: auto;
+        padding: 88px 300px;
+    }
+
+    body {
+        background-size: 100% 45%;
+    }
+
+    .dark-mode {
+        background-size: 100% 45%;
+    }
+
+    .header {
+        gap: 340px;
+        padding-bottom: 60px;
+    }
+
+    .name {
+        font-size: 40px;
+        letter-spacing: 15px;
+    }
+
+    .input {
+        width: 540px;
+        
+    }
+
+    .input-box {
+        gap: 20px;
+    }
+
+    #text {
+        font-size: 18px;
+        letter-spacing: -0.25px;
+        width: 450px;
+    }
+
+    .add-info {
+        display: none;
+    }
+
+    .info {
+        width: 540px;
+    }
+
+    .desktop-option {
+        display: flex;
+        gap: 15px;
+    }
+
+    .mark:hover {
+        color: var(--dark-grey);
+    }
+
+    .delete-text {
+        font-size: 18px;
+        letter-spacing: -0.25px;
+        color: var(--grey);
+    }
+
+    .delete-text:hover {
+        color: var(--dark-grey);
+    }
+
+    .option {
+        display: none;
+    }
+}

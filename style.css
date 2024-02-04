@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url(color.css);
+
+.container {
+    width: 375px;
+    margin: auto;
+    padding: 48px 24px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    line-height: normal;
+}
+
+body {
+    margin: 0;
+    background: url(./pic/Bitmap.png), var(--light-white);
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+}
+
+.dark-mode {
+    background: url(./pic/Bitmap1.jpg), var(--dark);
+    background-repeat: no-repeat;
+    background-size: 100% 55%;
+}
+
+.header {
+    display: flex;
+    gap: 190px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.name {
+    color: var(--white);
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 9px;
+}
+
+#switch {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.input {
+    width: 327px;
+    background: var(--white);
+    padding: 14px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#error {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    font-size: 15px;
+    color: red;
+    display: block;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.box input#mycheckbox {
+    display: none;
+}
+
+.box input#checkbox:checked + .label::before {
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+#text :placeholder-shown {
+    color: var(--grey);
+}
+
+#text {
+    border: 0;
+    outline: none;
+    color: var(--black);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.167px;
+}
+
+.add-info {
+    border: 0;
+    background: transparent;
+    font-size: 25px;
+    color: var(--grey);
+}
+
+.info {
+    margin-bottom: 20px;
+    width: 327px;
+    background: var(--white);
+    padding: 14px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.50);
+}
+
+.input-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mark-all {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.19px;
+    color: var(--blue);
+}
+
+.mark {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.19px;
+    color: var(--grey);
+}
+
+#item-left {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.167px;
+    color: var(--grey);
+}
+
+.delete-text {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.167px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: var(--grey);
+}
+
+.desktop-option {
+    display: none;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 80px;
+    width: 327px;
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.mark p {
+    margin-block: 40px;
+    text-align: center;
+}
+
+#ul {
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 10px;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.task-item {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    border: 0;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#check {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 5px;
+        left: 9px;
+        width: 4px;
+        height: 9px;
+        border-style: solid;
+        border-color: var(--white);
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    &:checked {
+        color: var(--white);
+        border-color: var(--purple);
+        background: var(--purple);
+        &::before {
+            opacity: 1;
+        }
+    }
+}
+
+#delete-btn {
+    border: 0;
+    background: transparent;
+    color: var(--dark-grey);
+    font-style: bold;
+    font-size: 18px;
+}

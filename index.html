@@ -1,0 +1,51 @@
+<!DOCTYPE htm>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To do</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="name">TODO</div>
+                <button id="switch"><img src="./pic/dark-mode.png" alt=""></button>
+            </div>
+            <div class="input">
+                <div class="input-box">
+                    <div class="box">
+                        <input id="mycheckbox" type="checkbox">
+                        <label class="label" for="mycheckbox"></label>
+                    </div>
+                    <input id="text" type="text" placeholder="Create a new todo…">
+                </div>
+                <button class="add-info">+</button>
+                <span id="error"></span>
+            </div>
+            <div class="info">
+                <div id="ul"></div>
+                <div class="input-info">
+                    <div id="item-left"></div>
+                    <div class="desktop-option">
+                        <div class="mark-all">All</div>
+                        <div class="mark">Active</div>
+                        <div class="mark">Completed</div>
+                    </div>
+                    <button class="delete-text">Clear Completed</button>
+                </div>
+            </div>
+            <div class="option">
+                <div class="mark-all">All</div>
+                <div class="mark">Active</div>
+                <div class="mark">Completed</div>
+            </div>
+            <div class="mark">
+                <p>Drag and drop to reorder list</p>
+            </div>
+        </div>
+
+        <script src="app.js" defer></script>
+    </body>
+</html>
