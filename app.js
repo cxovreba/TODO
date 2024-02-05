@@ -14,7 +14,7 @@ function generateTaskList() {
             const li = document.createElement('li');
             li.innerHTML = `
             <div class="check">
-            <input id="check" type="checkbox" ${ el.isChecked ? 'checked' : null} onchange="check(${i})"/>
+            <input id="check${i}" class="checkbox" type="checkbox" ${ el.isChecked ? 'checked' : null} onchange="check(${i})"/>
             <div class="task-item">${el.value}</div>
             </div>
             <button id="delete-btn" onclick="DeleteItem(${i})">X</button>
@@ -87,9 +87,8 @@ change_mode_btn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 })
 
-const task_item = document.querySelector('.task-item');
-
-function check(i,) {
+function check(i) {
+    const task_item = document.querySelector(`#check${i} + .task-item`);
     list[i].isChecked = !list[i].isChecked;
     if (list[i].isChecked) {
         task_item.style.textDecoration = 'line-through';
