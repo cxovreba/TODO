@@ -96,6 +96,7 @@ function check(i) {
     } else {
         task_item.style.textDecoration = 'none';
         task_item.style.color = 'var(--dark-grey)';
+        
     }      
 };
 
